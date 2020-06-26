@@ -10,7 +10,7 @@ class MinHeap:
     def construct_heap_optimal(self, data):
         self.nodes = data
         n = len(data)
-        for i in range((n-1)//2, -1, -1):
+        for i in range((n - 1) // 2, -1, -1):
             self.sink(i)
 
     def swim(self, i):
@@ -38,15 +38,18 @@ class MinHeap:
             self.sink()
             return data
         except Exception:
-            print('Heap is empty.')
+            print("Heap is empty.")
             return None
 
     def sink(self, i=0):
         l = self.child_left(i)
         r = self.child_right(i)
         # while l and r are within bounds
-        while l < len(self.nodes) and r < len(self.nodes) and \
-                (self.nodes[i] > self.nodes[l] or self.nodes[i] > self.nodes[r]):
+        while (
+            l < len(self.nodes)
+            and r < len(self.nodes)
+            and (self.nodes[i] > self.nodes[l] or self.nodes[i] > self.nodes[r])
+        ):
             if self.nodes[l] < self.nodes[r] or self.nodes[l] == self.nodes[r]:
                 self.nodes[l], self.nodes[i] = self.nodes[i], self.nodes[l]
                 i = l
@@ -59,8 +62,8 @@ class MinHeap:
     def print_heap(self):
         i, j = 0, 1
         for node in self.nodes:
-            print(node, end='   ')
-            if 2**j - 2 == i:
+            print(node, end="   ")
+            if 2 ** j - 2 == i:
                 print()
                 j = j + 1
             i = i + 1
@@ -78,23 +81,15 @@ class MinHeap:
             else:
                 self.sink(i)
         except ValueError:
-            print('Element {} is not in the heap.'.format(data))
+            print("Element {} is not in the heap.".format(data))
         pass
 
     def child_left(self, idx):
-        return 2*idx + 1
+        return 2 * idx + 1
 
     def child_right(self, idx):
-        return 2*idx + 2
+        return 2 * idx + 2
 
     def parent(self, idx):
-        return (idx - 1)//2
+        return (idx - 1) // 2
 
-
-def main():
-    heap = MinHeap([6, 7, 4, 2, 5, 7, 8, 12, 23, 1, 43, 6, 0])
-    heap.print_heap()
-
-
-if __name__ == "__main__":
-    main()

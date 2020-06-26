@@ -11,13 +11,13 @@ class Stack:
 
     def pop(self):
         if self.empty():
-            return RuntimeError('The stack is empty. Cannot pop.')
+            return RuntimeError("The stack is empty. Cannot pop.")
         else:
             return self.data.pop()
 
     def peek(self):
         if self.empty():
-            return RuntimeError('The stack is empty. Cannot peek.')
+            return RuntimeError("The stack is empty. Cannot peek.")
         else:
             return self.data[-1]
 
