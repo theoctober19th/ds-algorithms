@@ -1,8 +1,4 @@
-import sys
-
-sys.path.append("stack")
-
-from stack import Stack
+from data_structures.stack.stack import Stack
 
 
 class TowerOfHanoi:
