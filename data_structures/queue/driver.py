@@ -1,4 +1,4 @@
-from queue import Queue
+from queue import Queue, QueueOptimal
 
 
 def main():
@@ -13,6 +13,18 @@ def main():
     queue.dequeue()
     queue.dequeue()
     queue.display()
+
+    # optimal queue using linked list
+    print('\nOptimal queue using linked list')
+    q = QueueOptimal()
+    # q.display()
+    q.enqueue(34)
+    q.enqueue(56)
+    q.enqueue(67)
+    print(q.dequeue())
+    print(q.dequeue())
+    print(q.dequeue())
+    q.display()
 
 
 if __name__ == "__main__":

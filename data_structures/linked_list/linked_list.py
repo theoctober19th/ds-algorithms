@@ -48,7 +48,9 @@ class LinkedList:
         if self.head == None:
             return
         else:
+            data = self.head
             self.head = self.head.next
+            return data
 
     def remove_last(self):
         trav = self.head
