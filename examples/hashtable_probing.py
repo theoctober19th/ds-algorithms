@@ -1,4 +1,4 @@
-from hashtable import HashTableProbing
+from data_structures.hashtable.probing import HashTable
 
 
 def calculate_hash(key):
@@ -25,46 +25,47 @@ def probe_func_double_hashing(x, k, size):
 def main():
     # hash table resolution by linear probing
     print('Linear Probing')
-    htlinear = HashTableProbing(
+    htlinear = HashTable(
         8, hash_func=calculate_hash, probe_func=probe_func_linear)
     htlinear.display()
-    htlinear.insert(22)
-    htlinear.insert(11)
-    htlinear.insert(83)
+    htlinear.insert(22, 'qwve')
+    htlinear.insert(11, 'sdf')
+    htlinear.insert(83, 'qwere')
     htlinear.display()
-    htlinear.insert(41)
-    htlinear.insert(33)
-    htlinear.insert(89)
+    htlinear.insert(41, 'vnn')
+    htlinear.insert(33, 'pohv')
+    htlinear.insert(89, 'braxe')
     htlinear.display()
     # removing an item. creates a zombie
     htlinear.remove(33)
     htlinear.display()
 
     print('\n\nQuadratic Probing')
-    htquad = HashTableProbing(
+    htquad = HashTable(
         8, hash_func=calculate_hash, probe_func=probe_func_quadratic, threshold_factor=0.33)
     htquad.display()
-    htquad.insert(22)
-    htquad.insert(11)
-    htquad.insert(83)
+    htquad.insert(22, 'qwve')
+    htquad.insert(22, 'qwve')
+    htquad.insert(11, 'sdf')
+    htquad.insert(83, 'qwere')
     htquad.display()
-    htquad.insert(41)
-    htquad.insert(33)
-    htquad.insert(89)
+    htquad.insert(41, 'vnn')
+    htquad.insert(33, 'pohv')
+    htquad.insert(89, 'braxe')
     # htquad.insert(51)
     htquad.display()
 
     print('\n\nDouble hashing')
-    htdouble = HashTableProbing(
+    htdouble = HashTable(
         8, hash_func=calculate_hash, probe_func=probe_func_double_hashing)
     htdouble.display()
-    htdouble.insert(22)
-    htdouble.insert(11)
-    htdouble.insert(83)
+    htdouble.insert(22, 'qwve')
+    htdouble.insert(11, 'sdf')
+    htdouble.insert(83, 'qwere')
     htdouble.display()
-    htdouble.insert(41)
-    htdouble.insert(33)
-    htdouble.insert(89)
+    htdouble.insert(41, 'vnn')
+    htdouble.insert(33, 'pohv')
+    htdouble.insert(89, 'braxe')
     # htdouble.insert(51)
     htdouble.display()
 
