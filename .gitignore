@@ -1,5 +1,6 @@
 __pycache__
 virtualenv
+env
 *.egg-info
 .vscode
 .vs-code
