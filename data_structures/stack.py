@@ -10,7 +10,7 @@ class Stack:
         # particular stack
         self.name = name
 
-    def empty(self):
+    def is_empty(self):
         '''Returns whether the stack is empty'''
         return len(self.data) == 0
 
