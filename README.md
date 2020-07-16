@@ -23,3 +23,7 @@ pip3 install -r requirements.txt && pip3 install -e .
 ```
 
 4. Run any module you like.
+
+### Slides
+
+Get the presentation slides used on the event from [here](https://drive.google.com/drive/folders/1M7G_O7w3GZo6GYZQ_N95aSK_QMQPzflM?usp=sharing).
