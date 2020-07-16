@@ -2,7 +2,11 @@
 
 This repository contains implmentation of basic data structures in Python and also some examples of their implementation.
 
-##### Instructions
+The code in this repo was written primarily during the YouTube series **Implementation of Data Structures in Python** on channel [Bikalpa Codes](bit.ly/bikalpa-codes). If you want to know how this works, you may want to go through the series.
+
+Also, if you are from the event and looking for the persentation slides, you can download it frorm [here](https://drive.google.com/drive/folders/1M7G_O7w3GZo6GYZQ_N95aSK_QMQPzflM?usp=sharing).
+
+### Instructions
 
 1. Clone the repo.
 
@@ -23,7 +27,3 @@ pip3 install -r requirements.txt && pip3 install -e .
 ```
 
 4. Run any module you like.
-
-### Slides
-
-Get the presentation slides used on the event from [here](https://drive.google.com/drive/folders/1M7G_O7w3GZo6GYZQ_N95aSK_QMQPzflM?usp=sharing).
