@@ -8,7 +8,7 @@ Also, if you are from the event and looking for the persentation slides, you can
 
 ### Instructions
 
-1. Clone the repo.
+1. Clone the repository.
 
 ```
 git clone https://github.com/theoctober19th/ds-algorithms.git
