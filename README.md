@@ -33,3 +33,5 @@ pip3 install -r requirements.txt && pip3 install -e .
 You are welcome to make contributions to the project.
 
 If this is your first open source contribution (probably came here for hacktoberfest), please make sure your changes are not nonsensical (check [@shitoberfest](https://twitter.com/shitoberfest) if you're not sure what I mean). Let us promote healthy and active open source community practices. :) 
+
+Happy Coding!
